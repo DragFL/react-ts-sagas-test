@@ -1,16 +1,18 @@
 import Product from "../../Interfaces/product.interface";
 
+import "./Item.scss";
+
 type PropsTypes = {
     item : Product ;
 }
 
-const ItemContainer: React.FC <PropsTypes> =({ item }) =>{
+const Item: React.FC <PropsTypes> =({ item }) =>{
     return(
-    <div>
-      <div className='round-circle'>{item.quantity}</div>
-      <img src={item.imageItem} alt={item.alt}></img>
+    <div className="item__container">
+      <div className="round-circle">{item.quantity}</div>
+      <img className="item__image" src={item.imageItem} alt={item.alt}></img>
     </div>
     );
   }
 
-  export default ItemContainer;
+  export default Item;

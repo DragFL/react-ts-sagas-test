@@ -1,0 +1,17 @@
+$border-color: #cbcbcb;
+
+.store__label{
+    border-bottom: 1px solid;
+    border-color: $border-color;
+    padding-bottom: 10px;
+    margin: 0px 2.5vw 0px 2.5vw;
+    text-align: start;
+    font-weight: bold;
+}
+
+.store__grid-container{
+    margin: 2rem ;
+    display: block;
+    columns: 12rem;
+    gap: 1rem;
+}

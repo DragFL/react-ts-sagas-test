@@ -8,9 +8,10 @@ $primary-color: hsl(337, 100%, 74%);
         height: 100%;
         border-radius: 15px;
         margin-right: 35vw;
+        background-color: $primary-color;
     }
 
-    .buttonHeaderHolder{
+    .market-header__button-header-holder{
         display: inline-flex;
         align-items: center;
         padding: 15px;
@@ -18,16 +19,21 @@ $primary-color: hsl(337, 100%, 74%);
         justify-content: flex-end;
         font-size: 20px;
 
-        .buttonHeaderContainer{
+        .market-header__button-header-container{
             width: fit-content;
             background-color: $primary-color;
             display: inline-flex;
+            padding: 5px;
+            color: white;
         }
 
-        .shoppingIcon{
+        .market-header__shopping-icon{
             background-color: $primary-color;
-            padding-right: 5px;
-            color: white;
+            padding: 2px 4px 0px 0px;
+        }
+
+        button{
+            display: none;
         }
     }
 

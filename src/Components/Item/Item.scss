@@ -1,0 +1,32 @@
+$border-color: #cbcbcb;
+
+.item__container{
+    border: 2px solid;
+    border-color: $border-color;
+    border-radius: 2px;
+    margin: 5px;
+    margin: 0px 5px 25px 5px;
+    break-inside: avoid;
+    position: relative;
+ 
+    
+    .round-circle{
+        position: absolute;
+        border: 3px solid #000;
+        border-radius: 50%;
+        width: 34px;
+        height: 34px;
+        margin: 6px 0px 0px 7px;
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .item__image{
+        width: 100%; 
+        display: block;
+    }
+}
+

@@ -6,10 +6,10 @@ import papas from '../../images/papas.jpg';
 import oreo from '../../images/oreo.jpg';
 import quatro from '../../images/quatro.jpg';
 
-import MarketHeader from "../MarketHeader/MarketHeader";
-import Store from "../Store/Store";
-import ProductCard from "../ProductCard/ProductCard";
-import ShoppingCart from "../ShoppingCart/ShoppingCard";
+import MarketHeader from "../../Components/MarketHeader/MarketHeader";
+import Store from "../../Components/Store/Store";
+import ProductCard from "../../Components/ProductCard/ProductCard";
+import ShoppingCart from "../../Components/ShoppingCart/ShoppingCard";
 
 import "./Market.scss";
 
@@ -59,23 +59,28 @@ const Market: React.FC = () => {
   
     return(
       <div>
-        <div className='headerContainer'>
+        <div className='market__header-container'>
           <MarketHeader />
         </div>
-  
-        <div>
-          <Store items ={items} />
+
+        <div className="market__main-container">
+          <div className="market__store-container">
+            <Store items ={items} />
+          </div>
+    
+
         </div>
-  
-        <div>
-          <ProductCard item={items[0]} />
-          <ShoppingCart items={items} />
-  
-        </div>
+
       </div>
   
   
     );
   }
+/*
+  <div>
+  <ProductCard item={items[0]} />
+  <ShoppingCart items={items} />
+
+</div> */
 
 export default Market ;  
