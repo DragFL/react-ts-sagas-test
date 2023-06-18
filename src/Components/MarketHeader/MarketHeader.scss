@@ -18,6 +18,7 @@ $primary-color: hsl(337, 100%, 74%);
         width: 100%;
         justify-content: flex-end;
         font-size: 20px;
+        
 
         .market-header__button-header-container{
             width: fit-content;
@@ -25,11 +26,17 @@ $primary-color: hsl(337, 100%, 74%);
             display: inline-flex;
             padding: 5px;
             color: white;
-        }
+            border: 1px solid transparent;
 
-        .market-header__shopping-icon{
-            background-color: $primary-color;
-            padding: 2px 4px 0px 0px;
+            .market-header__shopping-icon{
+                background-color: $primary-color;
+                padding: 2px 4px 0px 0px;
+                font-size: 20px;
+            }
+
+            .market-header__cash-counter{
+                font-size: 20px;
+            }
         }
 
         button{

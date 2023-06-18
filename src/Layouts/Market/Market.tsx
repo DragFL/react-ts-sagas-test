@@ -64,11 +64,15 @@ const Market: React.FC = () => {
         </div>
 
         <div className="market__main-container">
+
           <div className="market__store-container">
             <Store items ={items} />
           </div>
-    
 
+          <div className="market__secondary-container">
+            <ProductCard item={items[0]} />
+            
+          </div>
         </div>
 
       </div>
@@ -77,10 +81,7 @@ const Market: React.FC = () => {
     );
   }
 /*
-  <div>
-  <ProductCard item={items[0]} />
   <ShoppingCart items={items} />
-
-</div> */
+ */
 
 export default Market ;  

@@ -9,16 +9,17 @@ const MarketHeader: React.FC = () => {
       <div className='headerMain'>
         <img src={logo} alt="Logoheader.png"/>
         <div className='market-header__button-header-holder'>
-          <div className='market-header__button-header-container'> 
+          <button className='market-header__button-header-container'> 
             <IconContext.Provider value={{ className: 'market-header__shopping-icon' }} >
               <TiShoppingCart />
             </IconContext.Provider>
-            <div>$0</div>
-            <button>X</button>
-          </div>
+            <div className="market-header__cash-counter">$0</div>
+            
+          </button>
         </div>
       </div>
     );
   }
+  /* <button>X</button>*/
 
 export default MarketHeader;   

@@ -9,7 +9,7 @@ type PropsTypes = {
 const Item: React.FC <PropsTypes> =({ item }) =>{
     return(
     <div className="item__container">
-      <div className="round-circle">{item.quantity}</div>
+      <div className="item__round-circle">{item.quantity}</div>
       <img className="item__image" src={item.imageItem} alt={item.alt}></img>
     </div>
     );
