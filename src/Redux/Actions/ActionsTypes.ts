@@ -1,24 +1,19 @@
 export const GET_PRODUCTS_FETCH = 'GET_PRODUCTS_FETCH';
 export const GET_PRODUCTS_SUCCESS = 'GET_PRODUCTS_FETCH';
 
-export const getProductsFetch = () => ({
-    type: GET_PRODUCTS_FETCH 
-});
-
-
 export const GET_PRODUCT_FETCH = 'GET_PRODUCT_FETCH';
 export const GET_PRODUCT_SUCCESS = 'GET_PRODUCT_SUCCESS';
 
-export const getProductFetch = (id:number) => ({
-    type: GET_PRODUCT_FETCH,
-    payload: id 
-});
-
+export const GET_CART_PRODUCTS = 'GET_CART_PRODUCTS';
+export const GET_CART_SUCCESS = 'GET_CART_SUCCESS';
 
 export const ADD_PRODUCT_CART = 'ADD_PRODUCT_CART';
-export const REMOVE_PRODUCT_CART = 'REMOVE_PRODUCT_CART';
+export const ADD_PRODUCT_SUCCESS = 'ADD_PRODUCT_SUCCESS';
 
-export const addProductCart = () => ({
-    type: ADD_PRODUCT_CART
-});
+export const REMOVE_PRODUCT_CART = 'REMOVE_PRODUCT_CART';
+export const REMOVE_PRODUCT_SUCCESS = 'REMOVE_PRODUCT_SUCCESS';
+
+export const SET_ROUTE = 'SET_ROUTE';
+
+
 

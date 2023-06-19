@@ -2,11 +2,32 @@ import Product from "../../Interfaces/product.interface";
 
 import "./ProductCard.scss";
 
-import { useSelector } from "react-redux";
-import { getProductFetch } from "../../Redux/Actions";
+import { useDispatch, useSelector } from "react-redux";
+import { addProductCart ,removeProductCart } from "../../Redux/Actions/Actions";
 
 const ProductCard: React.FC = () => {
-  const product = useSelector((state: any) => state.reducer.selectedProduct);
+
+  const dispatch = useDispatch();
+  const product = useSelector((state: any) => state.getProductReducer.selectedProduct);
+
+  function handleClickPlus(item:Product){
+    if(item === undefined) return;
+    
+    const producCart = {
+      product: item,
+      quantity: 1
+    }
+
+    dispatch(addProductCart(producCart));
+  }
+
+  function handleClickMinus(id:number){
+    if(id === undefined) return;
+    
+
+    dispatch(removeProductCart(id));
+  }
+
 
   if (product == undefined) {
     return <div>UwU</div>;
@@ -24,13 +45,19 @@ const ProductCard: React.FC = () => {
           alt={product.alt}
         ></img>
         <div className="product-card__counter">
-          <div className="product-card__name-holder">Name</div>
+          <div className="product-card__name-holder">{product.name}</div>
           <div className="product-card__dot">&bull;</div>
-          <div className="product-card__price-holder">$69</div>
-          <button className="button-style product-card__price-button--1">
+          <div className="product-card__price-holder">$ {product.price}</div>
+          <button 
+            className="button-style product-card__price-button--1"
+            onClick={()=>handleClickMinus(product.id)}  
+          >
             -
           </button>
-          <button className="button-style product-card__price-button--2">
+          <button 
+            className="button-style product-card__price-button--2"
+            onClick={()=>handleClickPlus(product)} 
+          >
             +
           </button>
         </div>

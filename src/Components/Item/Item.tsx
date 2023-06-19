@@ -1,7 +1,7 @@
 import Product from "../../Interfaces/product.interface";
 
 import { useDispatch } from "react-redux";
-import { getProductFetch } from "../../Redux/Actions";
+import { getProductFetch, setRoute } from "../../Redux/Actions/Actions";
 
 import "./Item.scss";
 
@@ -14,8 +14,8 @@ const Item: React.FC <PropsTypes> =({ item }) =>{
     const dispatch = useDispatch();
 
     function handleClick(id:number){
-      console.log("El  desde el front id: ", id);
       dispatch(getProductFetch(id));
+      dispatch(setRoute("productCard"));
     }
 
     return(

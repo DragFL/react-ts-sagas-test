@@ -10,7 +10,7 @@ const items: Product[] = [
   {
     id: 1,
     name: "Doritos",
-    price: 4,
+    price: 8000,
     imageItem: doritos,
     alt: "doritos.jpg",
     description: "Lorem ipsum",
@@ -18,7 +18,7 @@ const items: Product[] = [
   {
     id: 2,
     name: "Papas sabor pollo",
-    price: 3,
+    price: 6000,
     imageItem: papas,
     alt: "papas.jpg",
     description: "Lorem ipsum",
@@ -26,7 +26,7 @@ const items: Product[] = [
   {
     id: 3,
     name: "Galletas Oreo",
-    price: 2,
+    price: 4000,
     imageItem: oreo,
     alt: "oreo.jpg",
     description: "Lorem ipsum",
@@ -34,7 +34,7 @@ const items: Product[] = [
   {
     id: 4,
     name: "Cheetos sabor natural",
-    price: 2,
+    price: 2000,
     imageItem: cheetos,
     alt: "cheetos.jpg",
     description: "Lorem ipsum",
@@ -42,7 +42,7 @@ const items: Product[] = [
   {
     id: 5,
     name: "Gaseosa Quatro",
-    price: 5,
+    price: 5000,
     imageItem: quatro,
     alt: "quatro.jpg",
     description: "Lorem ipsum",

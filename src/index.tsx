@@ -4,15 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
-import { combineReducers, createStore, applyMiddleware } from '@reduxjs/toolkit';
-import  createSagaMiddleware  from 'redux-saga';
-import reducer from './Redux/Reducer';
-import mySaga from './Redux/Sagas';
+import {store} from "./Redux/Store";
 
-const sagaMiddleware = createSagaMiddleware();
-const rootReducer = combineReducers({reducer});
-const store = createStore(rootReducer ,applyMiddleware(sagaMiddleware));
-sagaMiddleware.run(mySaga);
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

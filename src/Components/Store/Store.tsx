@@ -2,7 +2,7 @@ import Item from "../Item/Item";
 
 
 import { useDispatch, useSelector } from "react-redux";
-import { getProductsFetch } from "../../Redux/Actions";
+import { getProductsFetch } from "../../Redux/Actions/Actions";
 
 import "./Store.scss";
 import { useEffect } from "react";
@@ -10,17 +10,18 @@ import { useEffect } from "react";
 const Store : React.FC = () => {
 
   const dispatch = useDispatch();
-  const products = useSelector((state:any) => state.reducer.products);
+  const products = useSelector((state:any) => state.getProductsReducer.products);
 
   useEffect(()=>{
     dispatch(getProductsFetch());
+    
   }, []);
  
-  if(products == undefined){
-    return <div>UwU</div>
+  if(products === undefined){
+    return <div>Loading</div>
   }
  
-  const items = products.map((product:any)=>{
+  const productList = products.map((product:any)=>{
     return <Item key={product.id} item = {product} />
   });
     return(
@@ -30,7 +31,7 @@ const Store : React.FC = () => {
         </h2 >
         
         <div className="store__grid-container">
-          {items}
+          {productList}
         </div>
       
       </>  

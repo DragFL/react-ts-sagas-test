@@ -2,11 +2,13 @@ import MarketHeader from "../../Components/MarketHeader/MarketHeader";
 import Store from "../../Components/Store/Store";
 import ProductCard from "../../Components/ProductCard/ProductCard";
 import ShoppingCart from "../../Components/ShoppingCart/ShoppingCart";
+import DefaultSecondary from "../../Components/DefaultSecondary/DefaultSecondary";
 
 import "./Market.scss";
+import { useSelector } from "react-redux";
 
 const Market: React.FC = () => {
-
+  const route = useSelector((state:any) => state.routeReducer.route);
   
     return(
       <div>
@@ -21,9 +23,9 @@ const Market: React.FC = () => {
           </div>
 
           <div className="market__secondary-container">
-            
-            <ProductCard />
-            
+            {(route === "" ) ?  <DefaultSecondary/> : null }
+            {(route === "productCard" ) ?  <ProductCard/> : null }
+            {(route === "shoppingCart" ) ?  <ShoppingCart/> : null }            
           </div>
         </div>
 
