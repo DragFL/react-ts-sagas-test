@@ -57,12 +57,10 @@ export function clearlyNotAxiosGet() {
   );
 }
 
-export function clearlyNotAxiosGetOne (id:number){
-    return new Promise((resolve) =>
+export function clearlyNotAxiosGetOne(id: number) {
+  return new Promise((resolve) =>
     setTimeout(() => {
-      resolve(items.filter((item) => item.id === id )[0]);
+      resolve(items.filter((item) => item.id === id)[0]);
     }, 300)
   );
 }
-
-

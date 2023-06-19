@@ -1,4 +1,8 @@
-import { ADD_PRODUCT_SUCCESS, GET_CART_SUCCESS,REMOVE_PRODUCT_SUCCESS } from "../Actions/ActionsTypes";
+import {
+  ADD_PRODUCT_SUCCESS,
+  GET_CART_SUCCESS,
+  REMOVE_PRODUCT_SUCCESS,
+} from "../Actions/ActionsTypes";
 
 const initialState = {
   cartProducts: [],

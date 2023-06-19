@@ -1,11 +1,11 @@
-import React from 'react';
-import Market from './Layouts/Market/Market';
-import './App.scss';
+import React from "react";
+import Market from "./Layouts/Market/Market";
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <Market/>
+      <Market />
     </div>
   );
 }

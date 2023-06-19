@@ -5,10 +5,9 @@ import getProductsReducer from "./GetProducts";
 import productCartReducer from "./ProductCart";
 import routeReducer from "./Route";
 
-
 export default combineReducers({
-    getProductReducer,
-    getProductsReducer,
-    productCartReducer,
-    routeReducer
+  getProductReducer,
+  getProductsReducer,
+  productCartReducer,
+  routeReducer,
 });

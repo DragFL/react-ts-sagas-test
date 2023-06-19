@@ -7,7 +7,7 @@ const initialState = {
 export default function routeReducer(state = initialState, action: any) {
   switch (action.type) {
     case SET_ROUTE:
-      return { ...state , route: action.payload };
+      return { ...state, route: action.payload };
     default:
       return state;
   }
