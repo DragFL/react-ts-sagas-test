@@ -1,0 +1,22 @@
+$border-color: #cbcbcb;
+$primary-color: #a820bd;
+$borde-label-color: #a364ad71;
+
+
+.store__label{
+    border-bottom: 1px solid;
+    border-color: $borde-label-color;
+    color: $primary-color;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: start;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.store__grid-container{
+    margin: 1rem ;
+    display: block;
+    columns: 12rem;
+    gap: 1rem;
+}

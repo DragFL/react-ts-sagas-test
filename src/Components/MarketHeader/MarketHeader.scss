@@ -1,0 +1,48 @@
+$primary-color: #a820bd;
+
+.market-header__main-container{
+    display: flex;
+    height: 100%;
+    width: 95vw;
+
+    img{
+        height: 100%;
+        border-radius: 15px;
+        margin-right: 35vw;
+        background-color: $primary-color;
+    }
+
+    .market-header__button-header-holder{
+        display: inline-flex;
+        align-items: center;
+        padding: 15px;
+        width: 100%;
+        justify-content: flex-end;
+        font-size: 20px;
+        
+
+        .market-header__button-header-container{
+            width: fit-content;
+            background-color: $primary-color;
+            display: inline-flex;
+            padding: 5px 7px 5px 5px;
+            color: white;
+            border: 1px solid transparent;
+
+            .market-header__shopping-icon{
+                background-color: $primary-color;
+                padding: 2px 4px 0px 0px;
+                font-size: 20px;
+            }
+
+            .market-header__cash-counter{
+                font-size: 20px;
+            }
+        }
+
+        button{
+            display: none;
+        }
+    }
+
+}

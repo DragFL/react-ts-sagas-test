@@ -1,0 +1,26 @@
+$primary-color: hsl(337, 100%, 74%);
+
+
+.market__header-container{
+    width: auto;
+    max-height: 90px;
+    margin: 1.5vw 0.8vw 0px 2.5vw;
+    height: 6vw;
+}
+
+.market__main-container{
+    width: auto;
+    display: flex;
+    margin: 0px 2.5vw 0px 2.5vw;
+
+    .market__store-container{
+        width: 60vw;
+    }
+    
+    .market__secondary-container{
+        width: 32vw;
+        padding-left: 40px;
+    }
+
+}
+
