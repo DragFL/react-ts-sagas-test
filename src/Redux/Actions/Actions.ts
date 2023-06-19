@@ -1,4 +1,3 @@
-import { type } from "os";
 import CartProduct from "../../Interfaces/cartProduct.interface";
 import {
   ADD_PRODUCT_CART,

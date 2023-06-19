@@ -1,12 +1,12 @@
 import { call, put, takeEvery } from "redux-saga/effects";
-import { clearlyNotAxiosGetOne } from "../../Mock/FakeApi";
+import ProductsApi from "../../Server/ProductsApi";
 import {
   GET_PRODUCT_FETCH,
   GET_PRODUCT_SUCCESS,
 } from "../Actions/ActionsTypes";
 
 function productFetch(id: number): any {
-  return clearlyNotAxiosGetOne(id).then((response) => response);
+  return ProductsApi.getOne(id).then((response) => response);
 }
 
 function* workProductFetch({ payload: id }: any): any {

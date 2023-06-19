@@ -7,13 +7,18 @@ import { useDispatch, useSelector } from "react-redux";
 import "./MarketHeader.scss";
 import calculateTotal from "../../Util/CalculateTotal";
 import { useEffect, useState } from "react";
-import { setRoute } from "../../Redux/Actions/Actions";
+import { getProductsCart, setRoute } from "../../Redux/Actions/Actions";
 
 const MarketHeader: React.FC = () => {
   const dispatch = useDispatch();
   const cartProducts = useSelector(
     (state: any) => state.productCartReducer.cartProducts
   );
+  
+  useEffect(()=>{
+    dispatch(getProductsCart());
+  },[]);
+
   const [totalValue, setTotalValue] = useState(0);
 
   useEffect(() => {

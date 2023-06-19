@@ -49,18 +49,24 @@ const items: Product[] = [
   },
 ];
 
-export function clearlyNotAxiosGet() {
-  return new Promise((resolve) =>
-    setTimeout(() => {
-      resolve(items);
-    }, 300)
-  );
-}
+class ProductsApi {
+  static async getAll() {
+    return new Promise((resolve) =>
+      setTimeout(() => {
+        resolve(items);
+      }, 300)
+    );
+  }
 
-export function clearlyNotAxiosGetOne(id: number) {
+  static async getOne(id: number) {
   return new Promise((resolve) =>
     setTimeout(() => {
       resolve(items.filter((item) => item.id === id)[0]);
     }, 300)
   );
 }
+
+}
+
+
+export default ProductsApi;
