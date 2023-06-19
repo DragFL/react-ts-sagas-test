@@ -6,7 +6,7 @@ import "./MarketHeader.scss"
 
 const MarketHeader: React.FC = () => {
     return(
-      <div className='headerMain'>
+      <div className='market-header__main-container'>
         <img src={logo} alt="Logoheader.png"/>
         <div className='market-header__button-header-holder'>
           <button className='market-header__button-header-container'> 

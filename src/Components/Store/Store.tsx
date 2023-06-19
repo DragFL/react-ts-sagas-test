@@ -11,9 +11,9 @@ const Store : React.FC <PropsTypes> = ({ items }) => {
 
     return(
       <>
-        <div className="store__label">
+        <h2  className="store__label">
             Store
-        </div>
+        </h2 >
         
         <div className="store__grid-container">
 
