@@ -1,4 +1,4 @@
-import "./DefaultSecondary.scss"
+import "./DefaultSecondary.scss";
 
 const DefaultSecondary: React.FC = () => {
   return (

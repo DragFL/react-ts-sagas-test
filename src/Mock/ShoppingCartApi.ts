@@ -29,12 +29,12 @@ class ShoppingCartApi {
         new Error("Failed to delete.");
       }
 
-      if(ShoppingCart[targetIndex].quantity === 1){
+      if (ShoppingCart[targetIndex].quantity === 1) {
         ShoppingCart.splice(targetIndex, 1);
-      }else{
+      } else {
         ShoppingCart[targetIndex].quantity -= 1;
       }
-      
+
       setTimeout(() => resolve(ShoppingCart), 300);
     });
   }
