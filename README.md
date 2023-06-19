@@ -1,4 +1,4 @@
-#About this project
+# About this project
 
 This is a sample project of an e-commerce SPA application. Made in react, with Redux-Sagas, vanilla CSS using SASS for styling.
 
