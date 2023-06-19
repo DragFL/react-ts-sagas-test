@@ -2,6 +2,21 @@ $border-color: #cbcbcb;
 $primary-color: #a820bd;
 $borde-label-color: #a364ad71;
 
+
+.shopping-card__flex-container{
+    display: flex;
+    justify-content: flex-end;
+
+    .shopping-card__price-label{
+        color: $borde-label-color;
+    }
+    .shopping-card__price{
+        color: $primary-color;
+        margin-left: 5px;
+    }
+}
+
+
 .shopping-card__label{
     border-bottom: 1px solid;
     border-color: $borde-label-color;
