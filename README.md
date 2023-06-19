@@ -34,7 +34,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm deploy`
 
-Deploys the application to surge.sh .\
+Deploys the application to surge.sh
 
 
 
