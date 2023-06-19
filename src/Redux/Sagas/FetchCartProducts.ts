@@ -1,5 +1,5 @@
 import { call, put, takeEvery } from "redux-saga/effects";
-import ShoppingCartApi from "../../Mock/ShoppingCartApi";
+import ShoppingCartApi from "../../Server/ShoppingCartApi";
 import { GET_CART_PRODUCTS, GET_CART_SUCCESS } from "../Actions/ActionsTypes";
 
 function cartProductsFetch() {

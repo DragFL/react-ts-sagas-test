@@ -1,6 +1,6 @@
 import { call, put, takeEvery } from "redux-saga/effects";
 import CartProduct from "../../Interfaces/cartProduct.interface";
-import ShoppingCartApi from "../../Mock/ShoppingCartApi";
+import ShoppingCartApi from "../../Server/ShoppingCartApi";
 import { getProductsCart } from "../Actions/Actions";
 import { ADD_PRODUCT_CART, ADD_PRODUCT_SUCCESS } from "../Actions/ActionsTypes";
 
